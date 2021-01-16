@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText, TextViewEdits, SmallSp" >
 
     <TextView
         android:id="@+id/text_view_countdown"
@@ -35,6 +36,53 @@
         android:layout_marginStart="10dp"
         android:text="reset"
         android:visibility="invisible"
-        tools:visibility="visible"/>
+        tools:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" >
+
+        <Button
+            android:id="@+id/button_world_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:inputType="textCapSentences"
+            android:text="World Clock" />
+
+        <Button
+            android:id="@+id/button_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/button_world_clock"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"
+            android:inputType="textCapSentences"
+            android:text="Alarm" />
+
+        <Button
+            android:id="@+id/button_stopwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/button_alarm"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"
+            android:inputType="textCapSentences"
+            android:text="Stopwatch" />
+
+        <Button
+            android:id="@+id/button_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/button_stopwatch"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"
+            android:inputType="textCapSentences"
+            android:text="Timer" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

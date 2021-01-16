@@ -1,4 +1,4 @@
-package com.example.countdowntimer;
+package com.example.clock;
 
 import android.content.Context;
 
