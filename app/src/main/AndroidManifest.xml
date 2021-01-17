@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CountdownTimer">
-        <activity android:name="com.example.clock.MainActivity">
+        <activity android:name=".Stopwatch"></activity>
+        <activity android:name=".Alarm" />
+        <activity android:name=".WorldClock" />
+        <activity android:name=".Timer" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

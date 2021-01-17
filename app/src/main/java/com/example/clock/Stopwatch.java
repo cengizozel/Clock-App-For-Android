@@ -10,17 +10,17 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class Stopwatch extends AppCompatActivity {
 
     private Button bWorldClock;
     private Button bAlarm;
-    private Button bStopwatch;
     private Button bTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_stopwatch);
+        setTitle("Stopwatch");
 
         bWorldClock = findViewById(R.id.button_world_clock);
         bWorldClock.setOnClickListener(new View.OnClickListener() {
@@ -35,14 +35,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openAlarm();
-            }
-        });
-
-        bStopwatch = findViewById(R.id.button_stopwatch);
-        bStopwatch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openSW();
             }
         });
 
@@ -63,12 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void openAlarm() {
         Intent intent = new Intent(this, Alarm.class);
-        this.startActivity(intent);
-        this.overridePendingTransition(0, 0);
-    }
-
-    public void openSW() {
-        Intent intent = new Intent(this, Stopwatch.class);
         this.startActivity(intent);
         this.overridePendingTransition(0, 0);
     }

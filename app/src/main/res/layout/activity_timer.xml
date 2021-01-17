@@ -8,7 +8,35 @@
     tools:context=".MainActivity"
     tools:ignore="HardcodedText, TextViewEdits, SmallSp" >
 
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="00:00"
+        android:textSize="60sp"
+        android:textColor="@android:color/black" />
 
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="start" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_start_pause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:text="reset"
+        android:visibility="invisible"
+        tools:visibility="visible" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
