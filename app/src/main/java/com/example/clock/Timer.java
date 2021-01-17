@@ -80,7 +80,6 @@ public class Timer extends AppCompatActivity {
                 resetTimer();
             }
         });
-
         updateCountDownText();
     }
 

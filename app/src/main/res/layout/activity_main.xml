@@ -8,7 +8,14 @@
     tools:context=".MainActivity"
     tools:ignore="HardcodedText, TextViewEdits, SmallSp" >
 
-
+    <TextClock
+        android:id="@+id/text_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:format12Hour="hh:mm:ss a"
+        android:textSize="60sp"
+        android:textColor="@android:color/black" />
 
     <RelativeLayout
         android:layout_width="wrap_content"

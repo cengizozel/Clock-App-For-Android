@@ -7,15 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button bWorldClock;
-    private Button bAlarm;
-    private Button bStopwatch;
-    private Button bTimer;
+    Button bWorldClock;
+    Button bAlarm;
+    Button bStopwatch;
+    Button bTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -12,9 +12,9 @@ import java.util.Locale;
 
 public class Stopwatch extends AppCompatActivity {
 
-    private Button bWorldClock;
-    private Button bAlarm;
-    private Button bTimer;
+    Button bWorldClock;
+    Button bAlarm;
+    Button bTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
